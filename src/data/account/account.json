@@ -1,0 +1,27 @@
+[
+    {
+        "username": "thanhphuong",
+        "password": "Thanhphuong130186@",
+        "role": "admin"
+    },
+    {
+        "username": "admin1",
+        "password": "6$^VHBeHZLqYADX9D6Tp9G4Z",
+        "role": "admin"
+    },
+    {
+        "username": "admin2",
+        "password": "bOYu$XX*5jWckmt&lq5PGswD",
+        "role": "admin"
+    },
+    {
+        "username": "admin3",
+        "password": "1aLXRMXBAjt&*9qQkkA0GNop",
+        "role": "admin"
+    },
+    {
+        "username": "guest",
+        "password": "RGKa9ed3c!z1Tg8q5vJ9@RTz",
+        "role": "user"
+    }
+]

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-literata text-4xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl;
+  }
+  h2 {
+    @apply font-literata text-3xl font-semibold text-gray-800 dark:text-gray-200 sm:text-2xl;
+  }
+  h3 {
+    @apply font-literata text-2xl font-medium text-gray-700 dark:text-gray-300 sm:text-xl;
+  }
+  h4 {
+    @apply font-literata text-xl font-medium text-gray-600 dark:text-gray-400 sm:text-lg;
+  }
+  h5 {
+    @apply font-literata text-lg font-medium text-gray-600 dark:text-gray-500 sm:text-base;
+  }
+  h6 {
+    @apply font-literata text-base font-medium text-gray-600 dark:text-gray-600 sm:text-sm;
+  }
+  a {
+    @apply hover:text-blue-600;
+  }
+  p {
+    @apply py-2 w-full text-wrap;
+  }
+  /* Áp dụng cho toàn bộ bảng */
+  table {
+    @apply w-full border-collapse border border-gray-300 dark:border-gray-700 py-4;
+  }
+
+  /* Dòng tiêu đề */
+  thead {
+    @apply bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300;
+  }
+
+  /* Dòng tiêu đề ô */
+  th {
+    @apply px-4 py-2 border border-gray-300 dark:border-gray-700 text-left;
+  }
+
+  /* Dòng nội dung */
+  tbody tr {
+    @apply border border-gray-300 dark:border-gray-700;
+  }
+
+  /* Ô nội dung */
+  td {
+    @apply px-4 py-2 border border-gray-300 dark:border-gray-700;
+  }
+
+  /* Hiệu ứng xen kẽ cho dòng */
+  tbody tr:nth-child(even) {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar chính */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Track (background của scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Màu nền track trắng nhạt */
+    border-radius: 10px;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Màu nền track tối */
+  }
+
+  /* Thanh cuộn (scroll thumb) */
+  ::-webkit-scrollbar-thumb {
+    background: #999; /* Màu xám trung tính */
+    border-radius: 10px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: #444; /* Màu xám đậm hơn cho dark mode */
+  }
+
+  /* Hiệu ứng hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Màu xám tối hơn khi hover */
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Ẩn scrollbar khi không cuộn */
+  ::-webkit-scrollbar {
+    transition: opacity 0.3s;
+  }
+
+  body:hover ::-webkit-scrollbar {
+    opacity: 1;
+  }
+
+  /* Hỗ trợ Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #999 #f0f0f0;
+  }
+
+  .dark * {
+    scrollbar-color: #444 #1a1a1a;
+  }
+}
